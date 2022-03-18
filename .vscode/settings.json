@@ -1,0 +1,10 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.validate": ["javascript"],
+  "editor.tabSize": 2,
+  "typescript.suggest.paths": false,
+  "javascript.suggest.paths": false,
+  "px-to-rem.px-per-rem": 16
+}
