@@ -1,7 +1,6 @@
 import * as React from 'react';
 import {View, Text, TouchableHighlight} from 'react-native';
 import FastImage from 'react-native-fast-image';
-import Config from 'react-native-config';
 import tw from '@lib/tailwind';
 import {useNavigation} from '@react-navigation/native';
 
@@ -55,7 +54,7 @@ export default function MovieCardAtom({
       <FastImage
         style={tw`flex-1 w-[206px] h-[260px] rounded-[22px]`}
         source={{
-          uri: `${Config.TMDB_IMAGE}${poster_path}`,
+          uri: `https://image.tmdb.org/t/p/original${poster_path}`,
           priority: FastImage.priority.high,
         }}
         resizeMode={FastImage.resizeMode.cover}>

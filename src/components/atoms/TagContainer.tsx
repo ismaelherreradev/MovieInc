@@ -1,6 +1,6 @@
 import * as React from 'react';
-import {Text} from 'react-native';
-import {BlurView} from '@react-native-community/blur';
+import {View, Text} from 'react-native';
+import {BlurView} from 'expo-blur';
 import tw from '@lib/tailwind';
 
 type TagBox = {
@@ -8,25 +8,39 @@ type TagBox = {
   height?: string;
   text?: string | number;
   children?: React.ReactElement;
+  style?: string;
 };
 
-export default function TagContainer({width, height, text, children}: TagBox) {
+export default function TagContainer({
+  width,
+  height,
+  text,
+  children,
+  style,
+}: TagBox) {
   return (
-    <BlurView
-      blurType="dark"
-      blurAmount={32}
+    <View
       style={tw.style(
         `${width ? `w-[${width}]` : ''} ${
           height ? `h-[${height}]` : ''
-        } rounded-[16px] flex-row justify-center items-center `,
+        } overflow-hidden  rounded-[16px] ${style}`,
       )}>
-      {children}
-      <Text
-        style={tw.style('text-white', {
-          fontFamily: 'ProximaNovaA-Regular',
-        })}>
-        {text}
-      </Text>
-    </BlurView>
+      <BlurView
+        intensity={80}
+        tint="dark"
+        style={tw.style(
+          `${width ? `w-[${width}]` : ''} ${
+            height ? `h-[${height}]` : ''
+          } flex-row justify-center items-center `,
+        )}>
+        {children}
+        <Text
+          style={tw.style('text-white', {
+            fontFamily: 'ProximaNovaA-Regular',
+          })}>
+          {text}
+        </Text>
+      </BlurView>
+    </View>
   );
 }

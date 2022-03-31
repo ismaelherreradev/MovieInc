@@ -1,7 +1,7 @@
 import * as React from 'react';
 import {Dimensions, SafeAreaView, View, Text, ScrollView} from 'react-native';
-import {BlurView} from '@react-native-community/blur';
-import Config from 'react-native-config';
+import {BlurView} from 'expo-blur';
+import {Ionicons} from '@expo/vector-icons';
 import FastImage from 'react-native-fast-image';
 import tw from '@lib/tailwind';
 
@@ -34,10 +34,10 @@ export default function MovieContainer({
       <View>
         <FastImage
           style={tw.style(
-            `items-center  w-[${Dimensions.get('window').width}px] h-[663px] `,
+            `items-center w-[${Dimensions.get('window').width}px] h-[663px] `,
           )}
           source={{
-            uri: `${Config.TMDB_IMAGE}${route.params.backdrop_path}`,
+            uri: `https://image.tmdb.org/t/p/original${route.params.backdrop_path}`,
             priority: FastImage.priority.high,
           }}
           resizeMode={FastImage.resizeMode.cover}>
@@ -62,7 +62,7 @@ export default function MovieContainer({
                 {genresNames.map(({name}) => name).join(' • ')}
               </Text>
               <View style={tw`mt-[10px] flex-row`}>
-                <TagContainer>
+                <TagContainer style="mr-2">
                   <Text
                     style={tw.style(
                       'px-[12px] py-[8px] text-white text-center',
@@ -86,7 +86,8 @@ export default function MovieContainer({
             style={tw.style(
               `absolute w-[${Dimensions.get('window').width}px] h-[663px]`,
             )}
-            blurType="dark"
+            intensity={80}
+            tint="dark"
           />
         </FastImage>
         <View style={tw`mx-[30px] mt-[20px]`}>
@@ -101,6 +102,8 @@ export default function MovieContainer({
             style={tw.style('text-[16px] tracking-[0.7px]', {
               fontFamily: 'ProximaNovaA-Regular',
             })}>
+            <Ionicons name="close-outline" size={24} color="black" />
+
             {route.params.overview}
           </Text>
         </View>

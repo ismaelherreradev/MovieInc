@@ -1,7 +1,6 @@
 import * as React from 'react';
 import {View, Text} from 'react-native';
 import FastImage from 'react-native-fast-image';
-import Config from 'react-native-config';
 import tw from '@lib/tailwind';
 
 // Interfaces
@@ -16,7 +15,7 @@ export default function CastProfileAtom({
       <FastImage
         style={tw`flex-1 w-[80px] h-[100px] rounded-[15px]`}
         source={{
-          uri: `${Config.TMDB_IMAGE}${profile_path}`,
+          uri: `https://image.tmdb.org/t/p/original${profile_path}`,
           priority: FastImage.priority.high,
         }}
         resizeMode={FastImage.resizeMode.cover}

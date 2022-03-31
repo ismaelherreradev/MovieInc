@@ -1,5 +1,4 @@
 import axios, {AxiosInstance, AxiosRequestConfig, AxiosResponse} from 'axios';
-import Config from 'react-native-config';
 
 class Http {
   private instance: AxiosInstance | null = null;
@@ -10,15 +9,10 @@ class Http {
 
   initHttp() {
     const http = axios.create({
-      baseURL: Config.TMDB_API_V3,
+      baseURL: 'https://api.themoviedb.org/3',
     });
 
-    http.interceptors.response.use(
-      response => response,
-      error => {
-        return error;
-      },
-    );
+    http.interceptors.response.use(response => response);
 
     this.instance = http;
     return http;

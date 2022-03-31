@@ -11,6 +11,7 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		154B1862469F40CFE5DA3A9D /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988B54CE6C52EC2CA0FE88F3 /* ExpoModulesProvider.swift */; };
 		6172F2D35A4C3AA820D92908 /* libPods-MoviesInc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6423831EA8574132BED9D8CC /* libPods-MoviesInc.a */; };
 		668A7A8C27E288AC00B6163B /* ProximaNovaA-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47FF031A086E441688666477 /* ProximaNovaA-Black.ttf */; };
 		668A7A8D27E288AC00B6163B /* ProximaNovaA-BlackIt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD402192E2F24DFC8FF7B03E /* ProximaNovaA-BlackIt.ttf */; };
@@ -28,6 +29,7 @@
 		668A7A9927E288AC00B6163B /* ProximaNovaA-ThinIt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B17D9C60392E4A839F3E91B6 /* ProximaNovaA-ThinIt.ttf */; };
 		7EF68E3733C33B6898317E18 /* libPods-MoviesInc-MoviesIncTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABFE59519B596E51CEFDCCC0 /* libPods-MoviesInc-MoviesIncTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		CDBE564567BC7EE875DB9C6C /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1407F22441B4834DB5D5A4E1 /* ExpoModulesProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,7 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = MoviesInc/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = MoviesInc/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = MoviesInc/main.m; sourceTree = "<group>"; };
+		1407F22441B4834DB5D5A4E1 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-MoviesInc/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
 		1C6642D687144A5CB5FCEDF4 /* ProximaNovaA-Extrabld.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "ProximaNovaA-Extrabld.ttf"; path = "../assets/fonts/ProximaNovaA-Extrabld.ttf"; sourceTree = "<group>"; };
 		1D0AE47A65C8663E3B452821 /* Pods-MoviesInc-MoviesIncTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoviesInc-MoviesIncTests.release.xcconfig"; path = "Target Support Files/Pods-MoviesInc-MoviesIncTests/Pods-MoviesInc-MoviesIncTests.release.xcconfig"; sourceTree = "<group>"; };
 		3D42B7858E8C4646A9E0CCAF /* ProximaNovaA-Semibold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "ProximaNovaA-Semibold.ttf"; path = "../assets/fonts/ProximaNovaA-Semibold.ttf"; sourceTree = "<group>"; };
@@ -63,6 +66,7 @@
 		6C97AB639B58BBB4B15BBE30 /* Pods-MoviesInc-MoviesIncTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoviesInc-MoviesIncTests.debug.xcconfig"; path = "Target Support Files/Pods-MoviesInc-MoviesIncTests/Pods-MoviesInc-MoviesIncTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7A9932DF4C9A4A9FB3202076 /* ProximaNovaA-BoldIt.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "ProximaNovaA-BoldIt.ttf"; path = "../assets/fonts/ProximaNovaA-BoldIt.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = MoviesInc/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		988B54CE6C52EC2CA0FE88F3 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-MoviesInc-MoviesIncTests/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
 		9CD5BBE2E4684722BBCC519F /* ProximaNovaA-ExtrabldIt.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "ProximaNovaA-ExtrabldIt.ttf"; path = "../assets/fonts/ProximaNovaA-ExtrabldIt.ttf"; sourceTree = "<group>"; };
 		ABFE59519B596E51CEFDCCC0 /* libPods-MoviesInc-MoviesIncTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MoviesInc-MoviesIncTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD402192E2F24DFC8FF7B03E /* ProximaNovaA-BlackIt.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "ProximaNovaA-BlackIt.ttf"; path = "../assets/fonts/ProximaNovaA-BlackIt.ttf"; sourceTree = "<group>"; };
@@ -151,6 +155,7 @@
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				E233CBF5F47BEE60B243DCF8 /* Pods */,
 				EF10296EB3324BE282902956 /* Resources */,
+				9D4B323379399E5D250D9455 /* ExpoModulesProviders */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -164,6 +169,31 @@
 				00E356EE1AD99517003FC87E /* MoviesIncTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		972B3F07B0BA8C535D4DA9E0 /* MoviesInc */ = {
+			isa = PBXGroup;
+			children = (
+				1407F22441B4834DB5D5A4E1 /* ExpoModulesProvider.swift */,
+			);
+			name = MoviesInc;
+			sourceTree = "<group>";
+		};
+		9D4B323379399E5D250D9455 /* ExpoModulesProviders */ = {
+			isa = PBXGroup;
+			children = (
+				972B3F07B0BA8C535D4DA9E0 /* MoviesInc */,
+				A3F70DEC876162A57A307A72 /* MoviesIncTests */,
+			);
+			name = ExpoModulesProviders;
+			sourceTree = "<group>";
+		};
+		A3F70DEC876162A57A307A72 /* MoviesIncTests */ = {
+			isa = PBXGroup;
+			children = (
+				988B54CE6C52EC2CA0FE88F3 /* ExpoModulesProvider.swift */,
+			);
+			name = MoviesIncTests;
 			sourceTree = "<group>";
 		};
 		E233CBF5F47BEE60B243DCF8 /* Pods */ = {
@@ -467,6 +497,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00E356F31AD99517003FC87E /* MoviesIncTests.m in Sources */,
+				154B1862469F40CFE5DA3A9D /* ExpoModulesProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,6 +507,7 @@
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				CDBE564567BC7EE875DB9C6C /* ExpoModulesProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -500,7 +532,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = MoviesIncTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -524,7 +556,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = MoviesIncTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -640,7 +672,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
 					"$(inherited)",
@@ -698,7 +730,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
 					"$(inherited)",
