@@ -16,6 +16,8 @@ export default function CastProfileMolecule({cast}: {cast: ICastResult[]}) {
         containerCustomStyle={tw`pl-[30px]`}
         activeSlideAlignment={'start'}
         data={cast}
+        loop={true}
+        loopClonesPerSide={5}
         renderItem={({item}) => <CastProfile {...item} />}
         sliderWidth={Dimensions.get('window').width}
         itemWidth={90}

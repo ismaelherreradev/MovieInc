@@ -1,8 +1,9 @@
 import * as React from 'react';
 import {Dimensions, SafeAreaView, View, Text, ScrollView} from 'react-native';
+import {useNavigation} from '@react-navigation/native';
 import {BlurView} from 'expo-blur';
-import {Ionicons} from '@expo/vector-icons';
 import FastImage from 'react-native-fast-image';
+import {Ionicons} from '@expo/vector-icons';
 import tw from '@lib/tailwind';
 
 // Interfaces
@@ -29,9 +30,20 @@ export default function MovieContainer({
     route.params.genre_ids.includes(id),
   );
 
+  const navigation = useNavigation();
+
   return (
     <ScrollView>
-      <View>
+      <View style={tw.style('relative ')}>
+        <View style={tw`z-50 absolute left-[20px] top-[50px]`}>
+          <Ionicons
+            name="close-outline"
+            size={34}
+            borderRadius={4}
+            color="#fff"
+            onPress={() => navigation.goBack()}
+          />
+        </View>
         <FastImage
           style={tw.style(
             `items-center w-[${Dimensions.get('window').width}px] h-[663px] `,
@@ -41,7 +53,7 @@ export default function MovieContainer({
             priority: FastImage.priority.high,
           }}
           resizeMode={FastImage.resizeMode.cover}>
-          <SafeAreaView style={tw`z-50 items-center `}>
+          <SafeAreaView style={tw`z-50 items-center`}>
             <View style={tw`w-[206px] mt-[78px] mb-[44px] z-50 h-[300px]`}>
               <MovieCardAtom show_content={false} {...route.params} />
             </View>
@@ -82,6 +94,7 @@ export default function MovieContainer({
               </View>
             </View>
           </SafeAreaView>
+
           <BlurView
             style={tw.style(
               `absolute w-[${Dimensions.get('window').width}px] h-[663px]`,
@@ -102,8 +115,6 @@ export default function MovieContainer({
             style={tw.style('text-[16px] tracking-[0.7px]', {
               fontFamily: 'ProximaNovaA-Regular',
             })}>
-            <Ionicons name="close-outline" size={24} color="black" />
-
             {route.params.overview}
           </Text>
         </View>
